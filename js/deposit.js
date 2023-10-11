@@ -1,14 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.getElementById('deposit-Buttom').addEventListener('click', function () {
     // user input amount 
     const depositInputAmount = document.getElementById('deposit-input');
     const newtDepositAmountString = depositInputAmount.value;
     const newtDepositAmount = parseFloat(newtDepositAmountString)
-    console.log(newtDepositAmount);
+    // console.log(newtDepositAmount);
     // previous Amount 
     const previousTotal = document.getElementById('deposit-total');
     const previousTotalAmountString = previousTotal.innerText;
     const previousTotalAmount = parseFloat(previousTotalAmountString)
-    console.log(previousTotalAmount);
+    // console.log(previousTotalAmount);
 
 //   previous total  balance
 const previousTotalBalance =document.getElementById('total-balance');
@@ -16,7 +36,12 @@ const previousTotalBalanceString=previousTotalBalance.innerText;
 const previousBalance= parseFloat(previousTotalBalanceString)
   
   
-  
+if (newtDepositAmount < 20) {
+
+  alert("if less then 20 tk then it is not accepter");
+  return;
+
+}
   // add total deposit Amount
     const currentDepositTotalAmount = newtDepositAmount + previousTotalAmount;
     previousTotal.innerText = currentDepositTotalAmount;

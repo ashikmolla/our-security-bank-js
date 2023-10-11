@@ -14,6 +14,15 @@ document.getElementById('withdraw-Buttom').addEventListener('click', function ()
         const newtwithdrawAmountString = withdrawInputAmount.value;
         const newtwithdrawAmount = parseFloat(newtwithdrawAmountString)
         // console.log(newtwithdrawAmount);
+
+        // clear input data 
+
+        withdrawInputAmount.value = " ";
+
+        if (newtwithdrawAmount < 1) {
+            alert("please provite a valid number")
+            return;
+        }
         // previous Amount 
         const previousTotal = document.getElementById('Withdraw-total');
         const previousTotalAmountString = previousTotal.innerText;
@@ -25,7 +34,12 @@ document.getElementById('withdraw-Buttom').addEventListener('click', function ()
         const previousTotalBalanceString = previousTotalBalance.innerText;
         const previousBalance = parseFloat(previousTotalBalanceString)
 
+        if (newtwithdrawAmount > previousBalance) {
 
+            alert("your account doesn't have enough money");
+            return;
+
+        }
 
         // add total deposit Amount
         const currentDepositTotalAmount = newtwithdrawAmount + previousTotalAmount;
@@ -38,12 +52,7 @@ document.getElementById('withdraw-Buttom').addEventListener('click', function ()
 
 
 
-
-        // clear input data 
-
-        withdrawInputAmount.value = " ";
-
-    }else{
+    } else {
         alert("Don't you remember the password?!! Enter the password you entered while logging in")
     }
 
