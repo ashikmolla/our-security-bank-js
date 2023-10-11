@@ -1,72 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2-Pameynt Mathod</title>
+    <title>ASFR Bank</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/42274de8ee.js" crossorigin="anonymous"></script>
+
+
 </head>
+
 <body>
-    <header>
-        <h1 class="text-7xl mt-8 mx-auto text-center">let's get Some  
-            <span class="text-slate-500">Money</span></h1>
-   </header>
-   <main>
-    <section class="my-12">
-        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
-           
-           <div class="bg-green-500 p-9 rounded-xl text-center">
-               <h4 class="text-2xl">Deposit</h4>
-               <h2 class="text-4xl">$<span id="deposit-total">00</span></h2>
-           </div>
-   
-   
-           <div class="bg-yellow-500 p-9 rounded-xl text-center">
-               <h4 class="text-2xl">Withdraw</h4>
-               <h2 class="text-4xl">$<span id="Withdraw-total">00</span></h2>
-           </div>
-   
-   
-           <div class="bg-violet-500 p-9 rounded-xl text-center">
-               <h4 class="text-2xl">Balanc</h4>
-               <h2 id="balanc-total" class="text-4xl">$<span id="balance-total-number">1235</span></h2>
-           </div>
-   
-        </div>
-      </section>
-      <!-- deposit and Withdraw section -->
+    <header></header>
+    <main>
+        <section class="bg-blue-600 ">
+            <div class="container mx-auto text-center pt-2">
+                <h2 class="text-7xl text-white font-bold mb-8">Welcome to <span
+                        class="text-amber-600 animate-pulse">ASFR</span> Bank</h2>
 
-      <section class="my-12">
-             <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
-           
-           <div class="bg-fuchsia-500 p-9 rounded-xl text-center">
-               <h4 class="text-3xl font-bold">Please Deposit</h4>
-               
-               <input id="deposit-input" class="text-black rounded w-7/12 mt-5 mb-2 mx-auto block pl-3 py-1" type="number" name="" id="login-User-Email"  placeholder="$ Amount you want to Deposit">
-               <button id="deposit-Buttom" class="bg-amber-500 hover:bg-cyan-600 px-8 font-medium py-1 text-white rounded-lg inline-flex mb-9 ">Deposit</button> 
-           </div>
-   
-   
-           <div class="bg-sky-500 p-9 rounded-xl text-center">
-               <h4 class="text-3xl font-bold">Please Withdraw</h4>
-               <input id="withdraw-input-number" class="text-black rounded w-7/12 mt-5 mb-2 mx-auto block pl-3 py-1" type="number" name=""  placeholder="$ Amount you want to Withdraw">
-               <button id="withdraw-Buttom" class="bg-amber-500 hover:bg-cyan-600 px-8 font-medium py-1 text-white rounded-lg inline-flex mb-9 ">Withdraw</button> 
-           </div>
-   
-   
-      
-
-      </section>
+                <a class="text-5xl text-amber-600"  href="./html/login.html">
+                    <i class="fa-solid fa-circle-arrow-right animate-bounce"></i>
+                </a>
+                <img class=" mx-auto " src="./img/undraw_grades_re_j7d6.svg" alt="">
+            </div>
+        </section>
+    </main>
 
 
-   </main>
-    
-    
-      <script src="utilities.js"></script>
-      <script src="deposit.js"></script>
-      <script src="withdraw.js"></script>
-      <script src="depositwithdraw.js"></script>
-     
 </body>
+
 </html>
