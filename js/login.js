@@ -12,7 +12,7 @@ document.getElementById('btn-submit').addEventListener('click', function () {
         window.location = 'bank.html'
         error.innerText = ''
     } else {
-        alert(" apni ki password bole gesen naki !!! tahole bank kotipokko ar sathe kotha volen plz :- 01836194129")
+        alert("if You have forgotten your password !! please contact the bank authority:- 01836194129 / https://www.facebook.com/profile.php?id=100049388054800")
         error.innerText = "Please see Email and Password then type"
     }
 
